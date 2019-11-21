@@ -129,7 +129,6 @@ def create_autoencoder(input_dimension):
     return model
 
 def build_autoencoder_neural_network(autoencoder):
-    #predictions = Dense(8, activation='relu')(autoencoder.layers[3].output)
     predictions = Dense(2, activation = 'relu')(autoencoder.layers[3].output)
     neural_network = Model(inputs=autoencoder.input, outputs=predictions)
     return neural_network
@@ -190,8 +189,9 @@ def run_autoencoder_scenario_on_data(path_to_unlabeled_data, path_to_labeled_dat
 
 
 if __name__ == "__main__":
-    #run_script_on_data('data_labeled.csv')
-    #run_script_on_data('labeled_data_scaled.csv')
+    run_script_on_data('data_labeled.csv')
+    
+    run_script_on_data('labeled_data_scaled.csv')
     
     run_autoencoder_scenario_on_data('extracted_features_scaled_unlabeled.csv', 'extracted_features_scaled.csv')
     

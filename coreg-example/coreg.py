@@ -118,7 +118,7 @@ class CoReg():
 
         print('MSE of regressor 1 on training set:', mean_squared_error(predictions_on_training_set_1, labeled_y_list[0]))
         print('MSE of regressor 2 on training set:', mean_squared_error(predictions_on_training_set_2, labeled_y_list[1]))
-        print('Length of labeled lists:', len(labeled_x_list[0]), len(labeled_x_list[1]), len(labeled_y_list[0]), len(labeled_y_list[1]))
+        
         print('MSE of regressor 1 on test set:', mean_squared_error(predictions_on_test_set_1, self._test_dataset_y))
         print('MSE of regressor 2 on test set:', mean_squared_error(predictions_on_test_set_2, self._test_dataset_y))
 
