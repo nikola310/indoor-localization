@@ -9,7 +9,7 @@ Faculty project for subject "Business Informatics". The goal of this project was
 There are two experiments presented here:
 
 1) Experiment with neural network:
-   - This experiment is based off of kernel [4], it trains autoencoder on unlabeled data and then decoder is replaced with regressor. For comparison, simmple neural network is trained on  Two scenarios are tested, one with basic features from dataset, other with new features.
+   - This experiment is based off of kernel [4], it trains autoencoder on unlabeled data and then decoder is replaced with regressor. For comparison, two scenarios were tested, one with basic features from dataset, other with new features.
 2) Experiment with co-training regressor:
    - This experiment is based on CoReg, a co-training algorithm for regressors suggested in [2]. CoReg is implemented and tested on two different scenarios, one with basic features from dataset, other with new, extracted features.
 
